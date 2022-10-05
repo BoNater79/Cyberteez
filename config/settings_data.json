@@ -2562,7 +2562,7 @@
               "text_position": "center",
               "text_align": "center",
               "button_label": "Purchase Now",
-              "link": ""
+              "link": "https:\/\/cyber-factory-1947.myshopify.com\/cart\/43729088086249:1?channel=buy_button"
             }
           },
           "1487547646402-1": {
@@ -2795,6 +2795,24 @@
           "featured_links_style": "animate_down",
           "rounded_image": false,
           "show_divider": true
+        }
+      },
+      "product-description-bottom-template": {
+        "type": "product-description-bottom-template",
+        "settings": {
+          "product_breadcrumb": true,
+          "display_tags": false,
+          "display_type": false,
+          "display_vendor": false,
+          "display_sku": false,
+          "display_social_buttons": true,
+          "display_collections": true,
+          "display_related_products": true,
+          "products_per_row": "2",
+          "product_images_position": "left",
+          "set_product_height": false,
+          "product_height": "500",
+          "toggle": false
         }
       }
     },
