@@ -1,0 +1,33 @@
+{{ 'sellvia-style.css' | asset_url | stylesheet_tag }}
+{{ 'simpleLightbox.js' | asset_url | script_tag }}
+
+{% assign reviews = product.metafields.sellvia_reviews %}
+
+{% if reviews != blank %}
+	<div class="sellvia-block">
+		<div class="sellvia-review">
+			<ul class="sellvia-review__list list-unstyled">
+				{% for key_value in reviews %}
+					{% assign review = key_value[1] %}
+					<li class="sellvia-review__list-item">
+						{% assign rating = review.rating | plus: 0 %}
+						{% render "sellvia-star-rating", rating: rating, fill: '#000000', size: 16 %}
+						<div>
+							<p>{{ review.body }}</p>
+						</div>
+						{% if review.images != blank %}
+							{% render "sellvia-rating-images", images: review.images %}
+						{% endif %}
+						<div class="sellvia-review__list-item-meta">
+							<p>
+								<b>{{ review.name }}</b>
+								on
+								<b>{{ review.created_at | date: "%b %d, %Y" }}</b>
+							</p>
+						</div>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+{% endif %}

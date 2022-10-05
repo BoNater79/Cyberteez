@@ -1,0 +1,33 @@
+{{ 'sellvia-style.css' | asset_url | stylesheet_tag }}
+{{ 'shippingBadge.js' | asset_url | script_tag }}
+
+{% assign sellviaId = product.metafields.sellvia.sellvia_id %}
+{% assign shippingBadge = shop.metafields.sellvia.shippingBadge %}
+{% assign holidays = shop.metafields.sellvia.holidays %}
+
+{% assign processingTime = 3 %}
+
+{% if shippingBadge.isProcessingTime == true %}
+	{% assign processingTime = shippingBadge.processingTime | plus: 3 %}
+{% endif %}
+
+{% if sellviaId != blank and shippingBadge.activate == true %}
+	<div class="shippingBadge-wrap shippingBadge-wrap-hidden">
+		<div class="shippingBadge-main" style="color:{{ shippingBadge.colors.main }}">
+			<svg width="45" viewBox="0 0 33.2 16.7">
+				<path d="M32.5,10.6L32.5,10.6c0.1-0.7,0.2-1.4,0.3-2.2c0.3-1.8-1.5-1.9-1.5-1.9l-1.2,0c-0.4-0.8-0.8-1.8-1.2-2.7C28.2,2.2,27,2.3,27,2.3h-4.1l0.3-1.5C23.3,0.4,22.9,0,22.5,0H2.9h0l0,0C2.5,0,0.8,0,0.5,0S0,0.4,0,0.7s0.2,1.6,3,1.6l0,0l0,0h13.3c0.4,0,0.7,0.4,0.6,0.8c-0.1,0.4-0.5,0.8-0.9,0.8H4.9c0,0,0,0-0.1,0v0c-0.4,0-2.1,0-2.4,0c-0.3,0-0.5,0.4-0.5,0.7S2.1,6,4.9,6v0h8.8c0.4,0,0.7,0.4,0.6,0.8c-0.1,0.4-0.5,0.8-0.9,0.8H7.2c0,0-0.1,0-0.1,0l0,0c-0.4,0-2.1,0-2.4,0c-0.3,0-0.5,0.4-0.5,0.7c0,0.3,0.2,1.6,3,1.6v0c0,0,0,0,0,0h2.2l-0.7,3.9c-0.1,0.5,0.2,0.8,0.7,0.8h1.5c0.2,1.3,1.3,2.2,2.7,2.2c1.4,0,2.8-0.9,3.5-2.2h7.2c0.2,1.3,1.3,2.2,2.7,2.2c1.4,0,2.8-0.9,3.5-2.2h1.3c0.5,0,0.9-0.4,1-0.8l0.4-2.2C33.2,11,32.9,10.6,32.5,10.6z M15.7,13.5c-0.2,0.9-1,1.6-1.9,1.6c-0.9,0-1.5-0.7-1.3-1.6c0.2-0.9,1-1.6,1.9-1.6C15.3,11.9,15.9,12.6,15.7,13.5z M22.9,6.7c-0.4,0-0.7-0.4-0.6-0.8l0.3-1.5c0.1-0.5,0.5-0.8,0.9-0.8h3.1c0.7,0,1,0.9,1,0.9s0.4,1,0.6,1.4c0.2,0.5,0.1,0.8-0.9,0.8H22.9z M29.1,13.5c-0.2,0.9-1,1.6-1.9,1.6c-0.9,0-1.4-0.7-1.3-1.6c0.2-0.9,1-1.6,1.9-1.6C28.7,11.9,29.3,12.6,29.1,13.5z" class="st0" style="fill:{{ shippingBadge.colors.main }}"></path>
+			</svg>
+			<span>
+				{% if shippingBadge.labelFree %}FREE{% endif %} {{ processingTime }}-Day Delivery
+			</span>
+		</div>
+		<div class="shippingBadge-order-within" style="color:{{ shippingBadge.colors.primary }}">
+			If you order within <span class="shippingBadge-time" style="color:{{ shippingBadge.colors.secondary }}"></span>
+		</div>
+		{% if shippingBadge.arrivesBy == true %}
+			<div class="shippingBadge-arrives-by" style="color:{{ shippingBadge.colors.primary }}">
+				Arrives by <span data-processing-time="{{ processingTime }}" data-holidays="{{ holidays }}"></span>
+			</div>
+		{% endif %}
+	</div>
+{% endif %}

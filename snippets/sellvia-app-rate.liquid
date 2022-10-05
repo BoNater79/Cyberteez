@@ -1,0 +1,10 @@
+{{ 'sellvia-style.css' | asset_url | stylesheet_tag }}
+
+{% assign rating = product.metafields.sellvia.sellvia_rate %}
+{% assign reviews = product.metafields.sellvia_reviews %}
+
+{% if rating != blank %}
+	<div class="sellvia-rate">
+		{% render "sellvia-star-rating", rating: rating, fill: '#000000', size: 16 %} {{ reviews.size }} Reviews
+	</div>
+{% endif %}
