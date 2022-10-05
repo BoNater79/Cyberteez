@@ -2495,8 +2495,6 @@
       "header": {
         "type": "header",
         "settings": {
-          "logo": "shopify:\/\/shop_images\/nav-logo160-for-black.png",
-          "logo_home": "",
           "logo_width": "140",
           "logo_top_padding": "6",
           "main_linklist": "main-menu",
@@ -2515,7 +2513,6 @@
       "1482978157864": {
         "type": "image-with-text-overlay-section",
         "settings": {
-          "image": "shopify:\/\/shop_images\/RAVE2_37b42821-04b8-42f8-bef7-c8b37b570b89.jpg",
           "parallax_image_height": "750",
           "headline_animation": "animate_down",
           "title": "RAVE WEAR",
@@ -2547,31 +2544,30 @@
           "1487547646402-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/metallica-1600_c9c85bfb-70a7-4673-acd7-db4cd31181da.jpg",
-              "title": "FEATURED ARTIST",
-              "subtitle": "<p>METALLICA<\/p>",
+              "image": "shopify:\/\/shop_images\/5e7ad4.jpeg-640x640.webp",
+              "title": "Featured Product",
+              "subtitle": "<p>Neck Massager<\/p>",
               "text_position": "center",
               "text_align": "center",
-              "button_label": "SHOP NOW",
-              "link": "shopify:\/\/collections\/metallica-html"
+              "button_label": "Buy Now",
+              "link": "shopify:\/\/products\/intelligent-neck-massager"
             }
           },
           "1487547718358": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/depeche_mode2C.jpg",
-              "title": "FEATURED ARTIST",
-              "subtitle": "<p>DEPECHE MODE<\/p>",
+              "image": "shopify:\/\/shop_images\/grill.webp",
+              "title": "Smokeless Indoor Electric BBQ Grill",
+              "subtitle": "",
               "text_position": "center",
               "text_align": "center",
-              "button_label": "SHOP NOW",
-              "link": "shopify:\/\/collections\/depeche-mode-html"
+              "button_label": "Purchase Now",
+              "link": ""
             }
           },
           "1487547646402-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/def-leppard-1600.jpg",
               "title": "",
               "subtitle": "",
               "text_position": "center",
@@ -2583,7 +2579,6 @@
           "1487547738054": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/iron-maiden2C_d712e33e-9cd7-43f1-8bd2-9ed9be2b2539.jpg",
               "title": "",
               "subtitle": "",
               "text_position": "center",
@@ -2595,7 +2590,6 @@
           "1489058077763": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/U2-JT-tour-1600-2C_4d02538e-9549-4f84-96e2-af18c5279baa.jpg",
               "title": "U2",
               "subtitle": "",
               "text_position": "center",
@@ -2613,8 +2607,8 @@
           "1489058077763"
         ],
         "settings": {
-          "slideshow_speed": "6",
-          "parallax_image_height": "700"
+          "slideshow_speed": "4",
+          "parallax_image_height": "2000"
         }
       },
       "list-collections-template": {
@@ -2635,7 +2629,6 @@
           "1487666165270": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/gas-monkey-garage-logo_a6a9e887-f311-4155-9a9d-9387dcd58f1b.jpg",
               "link": "shopify:\/\/collections\/gas-monkey-garage-html",
               "title": "GAS MONKEY GARAGE",
               "text": "<p>Got a monkey on your back? Official Fast N' Loud Gas Monkey Garage merchandise available&nbsp;here.<\/p>"
@@ -2644,7 +2637,6 @@
           "1487554017016-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/ckff-logo-840_946abc45-3a76-4b7c-a6aa-87e4b1b85f86.jpg",
               "link": "shopify:\/\/collections\/chris-kyle-frog-foundation-html",
               "title": "CHRIS KYLE FROG FOUNDATION",
               "text": "<p>We are proud to support the Chris Kyle Frog Foundation. A portion of each purchase goes directly to the foundation.<\/p>"
@@ -2653,7 +2645,6 @@
           "1487554017016-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/ruger-logo1_e88686c5-6a2b-4fdc-9cf1-1f6e6f9a1260.jpg",
               "link": "shopify:\/\/collections\/sturm-ruger-and-co-html",
               "title": "STURM, RUGER & CO",
               "text": "<p>Leader in the manufacturing industry and makers of civilian firearms since 1949. Official Ruger merchandise available here.<\/p>"
@@ -2662,7 +2653,6 @@
           "1487554017016-2": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/NRA-logo.png",
               "link": "shopify:\/\/collections\/nra-html",
               "title": "NATIONAL RIFLE ASSOCIATION",
               "text": "<p>The oldest continuously operating civil rights organization in the USA&nbsp;since 1871. Official NRA&nbsp;merchandise available here.<\/p>"
@@ -2708,7 +2698,8 @@
         "block_order": [
           "1487748598732-1"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "1488781206284": {
         "type": "featured-products",
@@ -2747,7 +2738,6 @@
       "1489052101832": {
         "type": "image-with-text-overlay-section",
         "settings": {
-          "image": "shopify:\/\/shop_images\/ozzy-randy3_dc821bdb-7c83-42ed-bb18-1ec2fac6bd52.jpg",
           "parallax_image_height": "750",
           "headline_animation": "animate_down",
           "title": "YOU CAN'T KILL ROCK N' ROLL",
@@ -2764,7 +2754,6 @@
           "1489062127987-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/superman.jpg",
               "link": "shopify:\/\/collections\/superman-html",
               "title": "SUPERMAN",
               "text": ""
@@ -2773,7 +2762,6 @@
           "1489062127987-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/batman.jpg",
               "link": "shopify:\/\/collections\/batman-html",
               "title": "BATMAN",
               "text": ""
@@ -2782,7 +2770,6 @@
           "1489062127987-2": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/wonder-woman.jpg",
               "link": "shopify:\/\/collections\/wonder-woman-html",
               "title": "WONDER WOMAN",
               "text": ""
@@ -2791,7 +2778,6 @@
           "1489062242339": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/x-men.jpg",
               "link": "shopify:\/\/collections\/x-men-html",
               "title": "X-MEN",
               "text": ""
