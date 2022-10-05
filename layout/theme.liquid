@@ -62,6 +62,8 @@
     {{ content_for_header }}
     <meta name="google-site-verification" content="hjayoqG-RmgruFXQ4CP_rATS6GNaB2a7hX_-ChwHQFI" />
   
+
+  {% include "trackify_x" %}
 </head>
   <body class="{{ template | replace: '.', '-' | handle }} {% if template contains "index" %}feature_image{% endif %}">
     <div id="content_wrapper">
