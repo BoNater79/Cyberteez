@@ -2580,12 +2580,13 @@
           "1487547738054": {
             "type": "image",
             "settings": {
-              "title": "",
+              "image": "shopify:\/\/shop_images\/LED_Backpack.jpg",
+              "title": "Smart LED Backpack",
               "subtitle": "",
               "text_position": "center",
               "text_align": "center",
               "button_label": "SHOP NOW",
-              "link": "shopify:\/\/collections\/iron-maiden-html"
+              "link": "https:\/\/cyberfactorystore2022.myshopify.com\/products\/smart-led-backpack"
             }
           },
           "1489058077763": {
